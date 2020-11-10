@@ -10,7 +10,7 @@ body {
     grid-template-rows: 490px 244px 90px;
     padding: 100px;
     height: 82vh;
-    background-image: url(../img/wo.jpg);
+    background-image: url(../website/img/wo.jpg );
     background-repeat: no-repeat;
     background-size: cover;
     color: #1773c9;
