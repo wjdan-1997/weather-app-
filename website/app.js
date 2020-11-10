@@ -2,8 +2,8 @@
 const url = "http://api.openweathermap.org/data/2.5/weather?zip=";
 const apiKey = "&appid=d962862dddca2d0427bb9f01a032cd06";
 const submitBtn = document.querySelector('#generate');
-projectData = {}
-    //console.log('Global Variables', zipCode , textArea,  );
+
+//console.log('Global Variables', zipCode , textArea,  );
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -16,7 +16,7 @@ submitBtn.addEventListener('click', (w) => {
     const zipCode = document.getElementById('zip').value; // take input value 
     const textArea = document.getElementById('feelings').value; // take input value
 
-    getData(url, zipCode, apiKey) // return resData
+    getData(url, zipCode, apiKey) //return resData
 
     .then((resData) => {
         ubdateData('http://127.0.0.1:2336/all');
@@ -36,7 +36,7 @@ submitBtn.addEventListener('click', (w) => {
             weather: resData.weather[0].description
         })
 
-        return fun
+
 
     })
 
