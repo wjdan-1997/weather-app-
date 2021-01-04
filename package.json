@@ -1,0 +1,26 @@
+{
+  "name": "jojofuck",
+  "version": "1.0.0",
+  "description": "## Overview  create an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application. ## Start : Start by setting up your project environment. Make sure Node is installed from the terminal. Install the packages Express, Body-Parser, and Cors from the terminal and them include them your server.js file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjdan-1997/weather-app-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjdan-1997/weather-app-/issues"
+  },
+  "homepage": "https://github.com/wjdan-1997/weather-app-#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "npm": "^6.14.8"
+  }
+}
