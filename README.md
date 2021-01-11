@@ -17,7 +17,10 @@ to install package:
 - npm install body-parser
 
 ## Run the server 
-node server.js 
+- in terminal run
+- npm run start
+## ZIP CODE 
+- Enter zip code (US) Only
 ## the language used :
  HTML // CSS // Js 
  
