@@ -8,7 +8,7 @@ const submitBtn = document.querySelector('#generate');
 // Create a new date instance dynamically with JS
 let d = new Date();
 let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
-
+const textArea = document.getElementById('feelings').value; // take input value
 ///Evene Listening 
 submitBtn.addEventListener('click', (w) => {
     w.preventDefault();
@@ -17,9 +17,10 @@ submitBtn.addEventListener('click', (w) => {
     const textArea = document.getElementById('feelings').value; // take input value
 
     getData(url, zipCode, apiKey) //return resData
+     
 
     .then((resData) => {
-        ubdateData('http://127.0.0.1:2336/all');
+        ubdateData('http://localhost:2336/all')
 
         return resData
     })
@@ -40,7 +41,8 @@ submitBtn.addEventListener('click', (w) => {
 
     })
 
-});
+}); 
+
 // this function wiil work when the user click on submit botton 
 
 /* Function to GET Web API Data*/
@@ -82,11 +84,12 @@ const postData = async(url = '', data = {}) => {
 
 
 const dateTime = document.querySelector('#dateTime');
-const temp = document.querySelector('#temp');
+const temp = document.querySelector('#tempr');
 const content = document.querySelector('#person_res');
 const cityName = document.querySelector('#city');
-const country = document.getElementById('country');
-const weather = document.getElementById('weather');
+const country = document.getElementById('Country');
+const weather = document.getElementById('Weather');
+
 const ubdateData = async(url) => {
     const reqUpdate_Data = await fetch(url);
 

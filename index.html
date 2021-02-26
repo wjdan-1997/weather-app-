@@ -9,16 +9,17 @@
 </head>
 
 <body>
-    <div id="app">
+    <div class="main">
+        <div id="app">
         <div class="style" id="box">
             <div class="holder headline">
-                <h1>Weather Journal App</h1>
+                <h1 class="title">Weather Journal App</h1>
             </div>
-            <div class="holder zip">
+            <div class="holder ">
                 <label for="zip"></label>
-                <input type="text" id="zip" placeholder="Enter zip code (US) Only">
+                <input class="input" type="text" id="zip" placeholder="Enter zip code ">
             </div>
-            <div class="holder feel">
+            <div class="holder ">
                 <label for="feelings"></label>
                 <textarea id="feelings" placeholder="Enter your feelings here" rows="5" cols="50"></textarea>
             </div>
@@ -26,21 +27,34 @@
                 <button id="generate" type="submit"> <a href="#">Generate</a> </button>
 
             </div>
-            <div class="footer">
+            <!-- <div class="footer">
                 <h5> © Design by Wejdan Altaleb. </h5>
 
                 <a href="https://www.linkedin.com/in/wejdan-altaleb-362403198/" target="_blank">
                     <i class='fo fa fa-linkedin'></i>
                 </a>
                 <a href="https://github.com/wjdan-1997" target="_blank"><i class='fo fa fa-github'></i></a>
-            </div>
+            </div> -->
 
 
         </div>
 
-        <div class="holder entry">
+        <div class="holder entry" >
             <p>Most Recent Entry</p>
             <div id="entryHolder">
+                <ul class="user-data-item">
+                    <li id="date"> </li>
+                    <li id="feel"></li>
+                    <li id="name"></li> 
+                    <li id="Country"></li>
+                    <li id="tempr"></li>
+                    <li id="Weather"></li>
+                   
+                    <!-- <dt class="data-term">IP Address</dt>
+				    <dd class="date"></dd> -->
+                    
+                  
+                </ul>
                 <ul>
                     <li id="dateTime"></li>
                     <li id="temp"></li>
@@ -52,9 +66,12 @@
             </div>
         </div>
 
+    </div>  
     </div>
+  
+    <script src="website/index.js" type="module"></script>
 
-    <script src="website/app.js" type="text/javascript"></script>
+    <!-- <script src="website/app.js" type="text/javascript"></script> -->
 
 </body>
 

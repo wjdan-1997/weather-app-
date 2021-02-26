@@ -1,26 +1,49 @@
 body {
-    background: #000000;
+    background: url(../website/img/q.jpg )  no-repeat;
+    background-position: center;
+    background-size:cover;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     color: #000000;
+    height: 100vh;
 }
 
 #app {
-    display: grid;
-    grid-template-rows: 490px 244px 90px;
-    padding: 100px;
-    height: 82vh;
-    background-image: url(../website/img/wo.jpg );
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #1773c9;
+
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 10ex;
+    gap: 50px;
     justify-content: center;
-    grid-gap: 299px;
+    align-items: center;
+}
+
+.style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    width: 400px;
+    background-color: rgba(250, 250, 250, 0.493);
+    background-color: rgba(250, 250, 250, 0.493);
+    border-top-right-radius:122px;
+    border-top-left-radius: 122px;
+    font-size: 16px;
+    box-shadow: 2px 4px 5px black;
+}
+.holder , button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     align-items: center;
     justify-content: center;
     color: black;
@@ -31,63 +54,55 @@ body {
     padding: 12px;
 }
 
-.style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 770px;
-    width: 999px;
-    background-color: rgba(196, 168, 168, 0.253);
-    border-radius: 22px;
-    font-size: 20px;
-    box-shadow: 2px 4px 5px #562a09;
-}
-
-#box {
-    border: 1px solid#cc8e0962;
-}
-
 .entry {
     /* grid-area: entry; */
-    background-color: rgba(196, 168, 168, 0.253);
-    border-radius: 22px;
-    border: 1px solid#cc8e0962;
-    box-shadow: 2px 4px 5px #562a09;
+    display: block;
+    background-color: rgba(250, 250, 250, 0.493);
+    border-top-right-radius: 112px;
+    border-top-left-radius: 112px;
+    width: 300px;
+    height: 190px;
+    border: none;
+    box-shadow: 2px 4px 5px black;
 }
 
 ul {
     list-style: none;
     text-align: center;
 }
+li{
+
+ 
+    margin-top: 7px;
+}
 
 #dateTime {
-    font-size: 22px;
+    font-size: 16px;
     color: black;
 }
 
 #temp {
-    font-size: 22px;
+    font-size: 16px;
     color: black;
 }
 
 #person_res {
-    font-size: 22px;
+    font-size: 16px;
     color: black;
 }
 
 #city {
-    font-size: 22px;
+    font-size: 16px;
     color: black;
 }
 
 #country {
-    font-size: 22px;
+    font-size: 16px;
     color: black;
 }
 
 #weather {
-    font-size: 22px;
+    font-size: 16px;
     color: black;
 }
 
@@ -103,27 +118,40 @@ label {
 
 input {
     display: block;
-    height: 100px;
-    width: 520px;
-    background-color: rgba(196, 168, 168, 0.253);
-    border-radius: 22px;
-    border: 0px;
+    height: 90px;
+    width: 300px;
+    background-color: rgba(136, 124, 124, 0.103);
+    border:1px solid black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    box-shadow: 2px 2px 5px#ebe84e62;
+    
 }
 
 button {
-    width: 400px;
-    height: 60px;
-    margin: 40px;
-    background-color: rgba(196, 168, 168, 0.253);
-    border-radius: 22px;
-    border: 0px;
-    text-align: center;
-    font-size: 20px;
-    box-shadow: 2px 2px 5px #ebe84e62;
+    width: 250px;
+    /* height: 60px; */
+    /* margin: 40px; */
+    /* background-color: rgba(196, 168, 168, 0.253); */
+    /* border-radius: 22px; */
+    /* border: 0px; */
+    /* text-align: center; */
+    /* font-size: 16px; */
+    /* box-shadow: 2px 2px 5px #ebe84e62; */
+    
+
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 7px;
+    /* width: 190%; */
+    padding: 1.5rem 1rem 1rem 1rem;
+    background-color: yellow;
+    border: none;
+    border-bottom: 5px solid #bbb930;
+    font-size: 1.1rem;
+    
 }
 
 a {
@@ -134,19 +162,26 @@ a {
 }
 
 textarea {
-    background-color: rgba(196, 168, 168, 0.253);
-    border-radius: 22px;
-    border: 0px;
+    height: 90px;
+    width: 300px;
+    background-color: rgba(136, 124, 124, 0.103);
+    border:1px solid black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    
+   
+  
     color: black;
-    font-size: 20px;
-    box-shadow: 2px 2px 5px#ebe84e62;
+    font-size: 16px;
+  
     text-align: center;
 }
 
 h1,
 p,
 h5 {
-    font-size: 26px;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     color: black;
