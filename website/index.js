@@ -1,5 +1,5 @@
 import Check_display from './submit.js'
-const Url = "http://api.openweathermap.org/data/2.5/weather?zip=";
+const Url = "https://api.openweathermap.org/data/2.5/weather?zip=";
 const api_Key = "&appid=d962862dddca2d0427bb9f01a032cd06";
 const submit_Btn = document.querySelector('#generate')
 
